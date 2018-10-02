@@ -13,7 +13,8 @@ public class LimiterTestApp {
 //        final RateLimiter rateLimiter = new CounterLimiter(10);
 //        final RateLimiter rateLimiter = new LeakyBucketLimiter(10);
 //        final RateLimiter rateLimiter = new TokenBucketLimiter(100);
-        final com.google.common.util.concurrent.RateLimiter rateLimiter = com.google.common.util.concurrent.RateLimiter.create(10);
+        final com.google.common.util.concurrent.RateLimiter rateLimiter =
+                com.google.common.util.concurrent.RateLimiter.create(10);
 
         // 多个线程
         int maxNum = 100;

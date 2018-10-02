@@ -41,7 +41,7 @@ public class LeakyBucketLimiter extends RateLimiter {
             water = Math.max(0, water - outWater);
 
             // 如果桶没满，返回成功
-            if (water <= capacity){
+            if (water < capacity){
                 water ++;
                 return true;
             }else {
