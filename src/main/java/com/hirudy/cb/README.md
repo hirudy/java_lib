@@ -4,7 +4,7 @@
 ## 熔断器基本原理
 > 熔断器是当依赖的服务已经出现故障时，为了保证自身服务的正常运行不再访问依赖的服务，防止雪崩效应
 
-![熔断器状态转换流程.png](./doc/stateswitch.png)
+![熔断器状态转换流程.png](https://github.com/hirudy/java_lib/blob/master/doc/cb/stateswitch.png)
 
 熔断器本身就是一个状态机。
 1. **关闭状态**：熔断器的初始化状态，该状态下允许请求通过。当失败超过阀值，转入**打开状态**，
